@@ -1,6 +1,6 @@
 pkgname=qt6-qtwebchannel
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Provides access to QObject or QML objects from HTML clients for seamless integration of Qt applications with HTML/JavaScript clients"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -22,7 +22,7 @@ makedepends=(
     'ninja'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(5ed164c4e427b64b95f305b1d386fbf702a626dd981fa94d7fcc92a35cd0f281)
+sha256sums=(c45c809aee77855d267dd7ea84e38fc167276403c9288f132f3980a4b7c9873f)
 
 build() {
     cd ${pkgname#*-}
